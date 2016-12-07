@@ -1,2 +1,4 @@
 *.s#?
 .DS_Store
+*.lck
+
