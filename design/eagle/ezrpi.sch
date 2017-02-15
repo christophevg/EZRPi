@@ -2246,7 +2246,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 </library>
 </libraries>
 <attributes>
-<attribute name="CNAME" value="Dash7 Raspberry Pi HAT"/>
+<attribute name="CNAME" value="EZRPi sub-GHz Raspberry Pi HAT"/>
 <attribute name="CREVISION" value="1.0"/>
 <attribute name="DESIGNER" value="Christophe VG"/>
 </attributes>
@@ -2289,7 +2289,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <part name="C12" library="passive" deviceset="CAP" device="0805" value="10nF"/>
 <part name="C13" library="passive" deviceset="CAP" device="0805" value="10nF"/>
 <part name="R1" library="passive" deviceset="RESISTOR" device="0805-RES" value="1"/>
-<part name="L1" library="passive" deviceset="INDUCTOR" device="0805"/>
+<part name="L1" library="passive" deviceset="INDUCTOR" device="0805" value="1 kΩ"/>
 <part name="C14" library="passive" deviceset="CAP" device="0805" value="10uF"/>
 <part name="GND-ISO13" library="setup" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="setup" deviceset="VCC" device=""/>
@@ -2801,6 +2801,27 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <pinref part="U$1" gate="G$1" pin="PB8"/>
 <wire x1="142.24" y1="-38.1" x2="142.24" y2="-48.26" width="0.1524" layer="91"/>
 <label x="142.24" y="-48.26" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="RXP" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="RXP"/>
+<wire x1="124.46" y1="12.7" x2="114.3" y2="12.7" width="0.1524" layer="91"/>
+<label x="114.3" y="12.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RXN" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="RXN"/>
+<wire x1="124.46" y1="10.16" x2="114.3" y2="10.16" width="0.1524" layer="91"/>
+<label x="114.3" y="10.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TX_13" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="TX_13/16"/>
+<wire x1="124.46" y1="7.62" x2="114.3" y2="7.62" width="0.1524" layer="91"/>
+<label x="114.3" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
