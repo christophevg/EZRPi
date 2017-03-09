@@ -1268,6 +1268,12 @@ Your Eurocircuits Team
 <via x="50" y="12.5" extent="1-16" drill="0.35" diameter="0.35"/>
 <via x="50" y="10" extent="1-16" drill="0.35" diameter="0.35"/>
 <via x="50" y="7.5" extent="1-16" drill="0.35" diameter="0.35"/>
+<via x="57.5" y="33" extent="1-16" drill="0.35" diameter="0.35"/>
+<via x="55" y="33" extent="1-16" drill="0.35" diameter="0.35"/>
+<via x="52.5" y="33" extent="1-16" drill="0.35" diameter="0.35"/>
+<via x="50" y="33" extent="1-16" drill="0.35" diameter="0.35"/>
+<via x="52.79" y="30.02" extent="1-16" drill="0.35" diameter="0.35"/>
+<via x="56" y="30" extent="1-16" drill="0.35" diameter="0.35"/>
 </signal>
 <signal name="RESET">
 <contactref element="MCU" pad="22"/>
