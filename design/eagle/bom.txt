@@ -1,7 +1,7 @@
-Partlist exported from /Users/xtof/Workspace/EZRPi/design/eagle/ezrpi.sch at 09/03/2017 13:52
+Partlist exported from /Users/xtof/Workspace/EZRPi/design/eagle/ezrpi.sch at 09/03/2017 17:16
 
 Qty Value      Device           Package                 Parts                   Description   
-1              SMACONNECTOR     SMA90_DIP               X1                      SMA Connector 
+1              SMACONNECTOR     SMA90_DIP               SMA                     SMA Connector 
 6   0.1uF      CAP0805          0805                    C2, C6, C7, C8, C9, C10 Capacitor     
 1   1 kΩ       INDUCTOR0805     0805                    L1                      Inductors     
 1   1 Ω        RESISTOR0805-RES 0805                    R1                      Resistor      
@@ -17,13 +17,13 @@ Qty Value      Device           Package                 Parts                   
 1   20nH       INDUCTOR0805     0805                    LR1                     Inductors     
 2   22pF       CAP0805          0805                    C18, C19                Capacitor     
 1   24nH       INDUCTOR0805     0805                    LR2                     Inductors     
-1   26MHz      ABM8             ABM8                    U$4                                   
-1   32.768kHz  MS3V-T1R         MS3V-T1R                U$6                                   
+1   26MHz      ABM8             ABM8                    X1                                    
+1   32.768kHz  MS3V-T1R         MS3V-T1R                X2                                    
 1   3pF        CAP0805          0805                    CR1                     Capacitor     
 1   470pF      CAP0805          0805                    C3                      Capacitor     
-1   48MHz      ABM11            ABM11                   U$5                                   
+1   48MHz      ABM11            ABM11                   X3                                    
 1   5.1pF      CAP0805          0805                    CM2                     Capacitor     
 2   9.1nH      INDUCTOR0805     0805                    LM, LM2                 Inductors     
-1   EZR32LG330 EZR32LG330       QFN64G-0.5-9X9MM        U$1                                   
-
-1   JTAG-6PINS JTAG-6PINS       TC2030-IDC              U$3                                   
+1   EZR32LG330 EZR32LG330       QFN64G-0.5-9X9MM        MCU                                   
+1   FTSH2X5    FTSH2X5          HEADER2X5               SWD                                   
+1   RPI3_HAT   RPI3_HAT         RASPI_BOARD_B+HAT_DF_CF RPI                                   
