@@ -2564,7 +2564,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <part name="C6" library="passive" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="C7" library="passive" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="C8" library="passive" deviceset="CAP" device="0805" value="0.1uF"/>
-<part name="C9" library="passive" deviceset="CAP" device="0805" value="100nF"/>
+<part name="C9" library="passive" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="GND-ISO5" library="setup" deviceset="GND" device=""/>
 <part name="C10" library="passive" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="C11" library="passive" deviceset="CAP" device="0805" value="1uF"/>

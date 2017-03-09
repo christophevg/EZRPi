@@ -733,7 +733,7 @@ Your Eurocircuits Team
 <element name="C6" library="passive" package="0805" value="0.1uF" x="42.11" y="36.55" rot="R90"/>
 <element name="C7" library="passive" package="0805" value="0.1uF" x="31.24" y="41.52" rot="R90"/>
 <element name="C8" library="passive" package="0805" value="0.1uF" x="35.73" y="26.32" rot="R270"/>
-<element name="C9" library="passive" package="0805" value="100nF" x="38.64" y="44.51"/>
+<element name="C9" library="passive" package="0805" value="0.1uF" x="38.64" y="44.51"/>
 <element name="L1" library="passive" package="0805" value="1 kΩ" x="31" y="47.45" rot="R270"/>
 <element name="R1" library="passive" package="0805" value="1 Ω" x="28.11" y="47.42" rot="R270"/>
 <element name="U$1" library="ezr" package="QFN64G-0.5-9X9MM" value="EZR32LG330" x="35.49" y="33.05" rot="R180"/>
