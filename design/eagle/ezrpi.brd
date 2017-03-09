@@ -148,7 +148,7 @@
 <board>
 <plain>
 <text x="9.2" y="9.7" size="8" layer="25">EZRPi</text>
-<text x="10.2" y="8.2" size="0.8128" layer="25">by Christophe VG &lt;contact@christophe.vg&gt;</text>
+<text x="10.2" y="8.2" size="0.8128" layer="25">http://christophe.vg/embedded/EZRPi</text>
 <text x="42.1" y="9.7" size="2.54" layer="25">v1</text>
 </plain>
 <libraries>
