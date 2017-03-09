@@ -2949,13 +2949,13 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 </net>
 <net name="IOVDD" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA1/GPIO1"/>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="-15.24" x2="86.36" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="-15.24" x2="86.36" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="-20.32" x2="76.2" y2="-20.32" width="0.1524" layer="91"/>
-<junction x="86.36" y="-20.32"/>
 <label x="76.2" y="-20.32" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="IOVDD_0"/>
+<wire x1="86.36" y1="-20.32" x2="86.36" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="-17.78" x2="96.52" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="86.36" y="-20.32"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
