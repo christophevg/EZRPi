@@ -1,6 +1,7 @@
 # EZRPi
 Raspberry Pi HAT with a Silicon Labs EZR32 Sub-GHz MCU  
-Christophe VG (<contact@christophe.vg>)
+Christophe VG (<contact@christophe.vg>)  
+[http://christophe.vg/embedded/EZRPi](http://christophe.vg/embedded/EZRPi)
 
 ## Introduction
 
