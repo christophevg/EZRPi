@@ -10,6 +10,12 @@ This repository contains all information on the design and implementation of thi
 
 ## Version 1
 
+The production of the first version of the board is currently ongoing. The design includes a standard 868MHz setup of the EZR32 and two LEDs for minimal debugging/feedback.
+
 ![Schematic v1](assets/schematic-v1.png)
 
 ![Board v1](assets/board-v1.png)
+
+Within a few weeks both the components and prototype PCBs will be available and ready for (manual) soldering and testing.
+
+![EuroCircuits Board v1](assets/ec-v1.png)
