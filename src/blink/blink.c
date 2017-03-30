@@ -7,13 +7,9 @@
 #include "em_emu.h"
 #include "em_gpio.h"
 
-// EZR_USB
-#define LED_PORT gpioPortD
-#define LED_PIN  6
-
 // EZRPi
-// #define LED_PORT gpioPortE
-// #define LED_PIN  2
+#define LED_PORT gpioPortE
+#define LED_PIN  2
 
 volatile uint32_t ticks;
 

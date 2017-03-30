@@ -1,6 +1,6 @@
 PROJECT      = blink
 SDK          = ../../lib/Gecko_SDK
-DEVICE       = EZR32LG330F256R60
+DEVICE       = EZR32LG330F128R60
 
 # a few short-hands into the SDK
 PLATFORM     = $(SDK)/platform
