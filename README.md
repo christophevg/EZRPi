@@ -23,6 +23,10 @@ The board is a 2-layer PCB based on the official Raspberry Pi HAT board specific
 
 ![Board v1](assets/board-v1.png)
 
+## Software
+
+In the `src` folder a first small test application is included: `blink`. It requires the `Gecko SDK` to be installed in the `lib` folder. Consult the [README](lib/README.md) in that folder for minimal survival steps.
+
 ## Thanks
 
 Although merely a software-implementation option, many thanks go out to the Dash7 Alliance and the OSS-7 team for creating the Dash7 network stack specification in all openness. Special thanks go out to Maarten W. for his support in making this project a reality.
