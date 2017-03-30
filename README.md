@@ -11,17 +11,17 @@ This repository contains all design and implementation source files of this gene
 
 ## Version 1
 
-The production of the first version of the board is currently ongoing. The design includes a standard 868MHz setup of the EZR32 and two LEDs for minimal debugging/feedback.
+On Thursday March 30, I was able to assemble the first EZRPi:
+
+![EZRPi v1](assets/ezrpi-v1.jpeg)
+
+The design includes a standard 868MHz setup of the EZR32 and two LEDs for minimal debugging/feedback.
 
 ![Schematic v1](assets/schematic-v1.png)
 
 The board is a 2-layer PCB based on the official Raspberry Pi HAT board specification.
 
 ![Board v1](assets/board-v1.png)
-
-Within a few weeks both the components and prototype PCBs will be available and ready for (manual) soldering and testing.
-
-![EuroCircuits Board v1](assets/ec-v1.png)
 
 ## Thanks
 
