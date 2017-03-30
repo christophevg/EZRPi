@@ -89,8 +89,7 @@ program: $(FLASH_SCRIPT)
 
 $(FLASH_SCRIPT): $(BUILD_DIR)/$(PROJECT).bin
 	@echo "*** generating programming script"
-	@echo "SelectEmuBySN $(PROGRAMMER)"  > $(FLASH_SCRIPT)
-	@echo "si SWD"                      >> $(FLASH_SCRIPT)
+	@echo "si SWD"                      > $(FLASH_SCRIPT)
 	@echo "speed 4000"                  >> $(FLASH_SCRIPT)
 	@echo "device $(DEVICE)"            >> $(FLASH_SCRIPT)
 	@echo "loadfile $<"                 >> $(FLASH_SCRIPT)
