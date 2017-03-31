@@ -25,7 +25,7 @@ The board is a 2-layer PCB based on the official Raspberry Pi HAT board specific
 
 ## Software
 
-In the `src/` folder a first small test application is included: `[blink](src/blink)`. It requires the `Gecko SDK`, which is included as a submodule in the `lib/` folder.
+In the `src/` folder a first small test application is included: [`blink`](src/blink). It requires the `Gecko SDK`, which is included as a submodule in the `lib/` folder.
 
 ### OSS-7 Support
 
