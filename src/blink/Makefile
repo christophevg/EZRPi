@@ -29,7 +29,7 @@ AR           = arm-none-eabi-ar
 OBJCOPY      = arm-none-eabi-objcopy
 DUMP         = arm-none-eabi-objdump
 
-BUILD_DIR    = $(PROJECT)
+BUILD_DIR    = .build
 
 JLINK        = JLinkExe
 FLASH_SCRIPT = flash.script
@@ -62,7 +62,7 @@ vpath %.c $(EZR32)/Source/ \
 					./
 vpath %.S $(EZR32)/Source/GCC/
 
-all: $(BUILD_DIR) $(BUILD_DIR)/$(PROJECT).bin
+all: $(BUILD_DIR)/$(PROJECT).bin
 
 $(BUILD_DIR)/%.o: %.c
 	@echo "*** compiling $<"
@@ -72,7 +72,7 @@ $(BUILD_DIR)/%.o: %.S
 	@echo "*** assembling $<"
 	@$(CC) $(ASMFLAGS) $(INC) -c -o $@ $<
 
-$(BUILD_DIR)/$(PROJECT).out: $(OBJS)
+$(BUILD_DIR)/$(PROJECT).out: $(BUILD_DIR) $(OBJS)
 	@echo "*** linking $@"
 	@$(CC) $(LDFLAGS) $(OBJS) $(LIBS) -o $@
 
@@ -83,22 +83,22 @@ $(BUILD_DIR)/$(PROJECT).bin: $(BUILD_DIR)/$(PROJECT).out
 $(BUILD_DIR):
 	@mkdir -p $(BUILD_DIR)
 
-program: $(FLASH_SCRIPT)
+program: $(BUILD_DIR)/$(FLASH_SCRIPT)
 	@echo "*** programming"
-	@$(JLINK) < $(FLASH_SCRIPT)
+	@$(JLINK) < $<
 
-$(FLASH_SCRIPT): $(BUILD_DIR)/$(PROJECT).bin
-	@echo "*** generating programming script"
-	@echo "si SWD"                      > $(FLASH_SCRIPT)
-	@echo "speed 4000"                  >> $(FLASH_SCRIPT)
-	@echo "device $(DEVICE)"            >> $(FLASH_SCRIPT)
-	@echo "loadfile $<"                 >> $(FLASH_SCRIPT)
-	@echo "verifybin $<, 0x0"           >> $(FLASH_SCRIPT)
-	@echo "r"                           >> $(FLASH_SCRIPT)
-	@echo "g"                           >> $(FLASH_SCRIPT)
-	@echo "exit"                        >> $(FLASH_SCRIPT)
+$(BUILD_DIR)/$(FLASH_SCRIPT): $(BUILD_DIR)/$(PROJECT).bin
+	@echo "*** generating programming script $@"
+	@echo "si SWD"                       > $@
+	@echo "speed 4000"                  >> $@
+	@echo "device $(DEVICE)"            >> $@
+	@echo "loadfile $<"                 >> $@
+	@echo "verifybin $<, 0x0"           >> $@
+	@echo "r"                           >> $@
+	@echo "g"                           >> $@
+	@echo "exit"                        >> $@
 
 clean:
-	@rm -rf $(BUILD_DIR) $(FLASH_SCRIPT)
+	@rm -rf $(BUILD_DIR)
 
-.PHONY: all program compile size clean
+.PHONY: all program clean
