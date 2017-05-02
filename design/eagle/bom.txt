@@ -1,6 +1,7 @@
-Partlist exported from /Users/xtof/Workspace/EZRPi/design/eagle/ezrpi.sch at 09/03/2017 17:16
+Partlist exported from /Users/xtof/Workspace/EZRPi/design/eagle/ezrpi.sch at 31/03/2017 21:42
 
 Qty Value      Device           Package                 Parts                   Description   
+2              LEDCHIPLED_0805  CHIPLED_0805            BLUE, RED               LED           
 1              SMACONNECTOR     SMA90_DIP               SMA                     SMA Connector 
 6   0.1uF      CAP0805          0805                    C2, C6, C7, C8, C9, C10 Capacitor     
 1   1 kΩ       INDUCTOR0805     0805                    L1                      Inductors     
@@ -23,6 +24,7 @@ Qty Value      Device           Package                 Parts                   
 1   470pF      CAP0805          0805                    C3                      Capacitor     
 1   48MHz      ABM11            ABM11                   X3                                    
 1   5.1pF      CAP0805          0805                    CM2                     Capacitor     
+1   68 Ω       RESISTOR0805-RES 0805                    R2                      Resistor      
 2   9.1nH      INDUCTOR0805     0805                    LM, LM2                 Inductors     
 1   EZR32LG330 EZR32LG330       QFN64G-0.5-9X9MM        MCU                                   
 1   FTSH2X5    FTSH2X5          HEADER2X5               SWD                                   
